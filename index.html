@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>購入対象オッズ計算</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h2>購入対象オッズ計算</h2>
+
+  <div><input id="od1" type="number" placeholder="1人気オッズ"></div>
+  <div><input id="od2" type="number" placeholder="2人気オッズ"></div>
+  <div><input id="od3" type="number" placeholder="3人気オッズ"></div>
+  <div><input id="od4" type="number" placeholder="4人気オッズ"></div>
+  <div><input id="od5" type="number" placeholder="5人気オッズ"></div>
+  <button onclick="calc()">計算</button>
+  </br>
+  </br>
+  <div>過剰人気型：<span id="result1">---</span></div>
+  <div>実力伯仲型：<span id="result2">---</span></div>
+  </br>
+  <div>
+    過剰人気型は「1～5平均値と1人気の差4.5以上」及び「4人気が10以上」</br>
+    実力伯仲型は「1人気/5人気 > 0.3」</br>
+    過剰人気型は1勝クラス以下のレースで買い</br>
+    実力伯仲型は全クラス以上のレースで買い</br>
+    </br>
+    上記とも以下に該当する場合に買う</br>
+    </br>
+    [芝]ルール</br>
+    全競馬場 1200〜2000m</br>
+    稍重以上なら全距離</br>
+    </br>
+    [ダ]ルール</br>
+    中山/中京 1200〜1800m</br>
+    稍重以上なら全場全距離
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
